@@ -1,0 +1,495 @@
+body{
+    overflow-x: hidden ;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 23px;
+    line-height: 1.5;
+}
+.navbar-toggler:focus{
+    outline: none;
+    
+}
+.active{
+    background-color: rgba(0,0,0,.1);
+}
+.activeLink{
+    color:#FDD835 ;  
+    text-decoration: underline; 
+}
+.colourfulText{
+    color: #FDD835;
+}
+.hireButton{
+    color: #FAFAFA;
+}
+
+p{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container-fluid{
+    padding: 3% 5%;
+}
+#Frame{
+    animation: frame 5s linear;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-iteration-count: infinite;
+}
+@keyframes frame{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+} 
+.navbar{
+    padding: 0 0 30px;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Montserrat/light' sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color:#616161;
+    text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#FDD835 ;  
+    text-decoration: underline; 
+}
+
+.logo{
+    width: 227px;
+    height: 68px;
+}
+.mainDescription{
+    margin-top: 216px;
+}
+.mainDescription h1{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 21px;
+}
+.hireButton{
+    margin-top: 24px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 27.0455px;
+}
+.titleImg{
+    width: 650.51px;
+    height: 650.49px;
+}
+
+/* services */
+.serviceHeader{
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 44px;
+}
+.service{
+    text-align: center;
+    position: relative;
+    padding: 40px 20px;
+    height: 380px;
+    width: 293px;
+    align-items: center;
+    border: none;
+    transition: box-shadow .2s linear;
+}
+.service:hover{
+    background: #FAFAFA;
+    box-shadow: 2px 4px 14px  rgba(3, 3, 3, 0.12);  
+}
+.serviceImg{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+.title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+.service p{
+    padding-bottom: 30px;
+}
+
+.contactLink{
+    font-weight: 600;
+    font-size: 18px;    
+    color: #FDD835;
+}
+.contactLink:hover{
+    color: #FDD835;
+}
+/* hire Us */
+.hireImg{
+    width: 365px;
+    height: 545.27px; 
+}
+.hireText{
+    padding-left: 200px;
+    padding-top: 170px;
+}
+.hireEclipse{
+    width: 32.81px;
+    height: 28px;
+    margin-bottom: -40px;
+    margin-left: -10px;
+}
+
+/* proof */
+.proof{
+    margin-top: 10%;
+}
+.proofText{
+    padding: 0 80px 0 20px ;
+}
+.activeProjects{
+    position: relative;
+}
+.img{
+    width: 55px;
+    height: 53px;
+}
+.activeProject1{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    align-items: center;
+    text-align: center;
+}
+.activeProject2{
+    position: absolute;
+    top: 0px;
+    right: 250px;
+    text-align: center;
+}
+.activeProject3{
+    position: absolute;
+    top: 60px;
+    right:10px;
+    text-align: center;
+}
+.activeProject4{
+    position: absolute;
+    bottom: 0; 
+    left: 250px;
+    text-align: center;
+}
+.projectEllipse{
+    position: relative;
+}
+.ellipseImg{
+    width: 200;
+    height: 200px;
+}
+.project3Info{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+.num{
+    color: #FDD835;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+.workDone{
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #616161;
+    margin: 0;
+}
+
+/* pricing */
+.pricing{
+    padding: 5% 10%;
+}
+.tarifs{
+    display: flex;
+    justify-content: space-between;
+}
+.tarif{
+    background:white ;
+    text-align: center;
+    padding: 14px 35px 15px 20px;
+    transition: box-shadow .2s linear;
+}
+.tarif:hover{
+    background:#FAFAFA;
+    box-shadow: 2px 4px 14px  rgba(3, 3, 3, 0.12);  
+}
+.pricingHeader{
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 44px;
+}
+.pricingImg{
+    width: 90px;
+    height: 80px;
+    margin: 40px 0 20px;
+}
+.tarifFeatures{
+    text-align: left;
+    margin-left: 40px;
+}
+.tarifFeature{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+}
+.cost{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 0;
+}
+.tarifButton{
+    margin-bottom: 50px;
+    background: #FFB300;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 27.0455px;
+    width: 151px;
+    height: 44px;
+    color: white;
+}
+
+/* contact */
+
+.contactImg{
+    width: 500.47px;
+    height: 535.16px;   
+}
+.contacts{
+    padding: 80px 40px 0;
+}
+.contactName,
+#contactEmail,
+#message{
+    border-radius: 30px;
+    border: 2px solid #F5F5F5;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 20px;
+    transition: background .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+.contactName:focus,
+#contactEmail:focus,
+#message:focus{
+    background: #F5F5F5;
+    box-shadow: 2px 4px 14px  rgba(3, 3, 3, 0.12);  
+    outline: transparent;
+}
+.contactName{
+    width:38%;
+    height: 50px;  
+    display: inline-block; 
+}
+.contactName:first-child{
+    margin-right: 20px;
+}
+#contactEmail{
+    width: 80%;
+    height: 50px;   
+}
+#message{
+    width: 80%;
+    height: 183px;
+}
+.submitButton{
+    background: #FFB300;
+    width: 119px;
+    height: 44.17px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 27.0455px;
+    color: white;
+}
+/* footer */
+footer{
+    background: #616161;
+    padding: 70px;
+}
+.footerLogo{
+    margin-bottom: 50px;
+}
+footer p{
+    margin-bottom: 40px;
+}
+.socialMedia{
+    margin-bottom: 20px;   
+}
+footer i{
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 20px;
+    color: gray;
+}
+.socialLink{
+    color: #FDD835;
+    font-size: 16px;
+}
+.socialLink:hover{
+    color: #FDD835;
+}
+.socialMedia span{
+    padding-right: 15px;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height: 271px;
+    width: fit-content;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height: 289px;
+    width: fit-content;
+}
+
+@media (max-width :990px){
+    /* main */
+    .navbar-nav{
+        text-align:center;
+    }
+    .titleInfo{
+        text-align: center;
+    }
+    .mainDescription{
+        margin-top: 30px;
+    }
+    /* service */
+    .service{
+        margin-left: 50px;
+    }
+
+    /* why section */
+    .hireUs{
+        margin-top: -100px;
+    }
+    /* proof */
+    .proofText{
+        padding: 0 20px;
+    }
+    .activeProject1{
+        top: 30px;
+        left: 70px;
+    }
+    .activeProject2{
+        top: 202px;
+        left: 35px;
+    }
+    .activeProject3{
+        top: 11px;
+        right: 34px;
+
+    }
+    .ellipseImg{
+        height: 160px;
+        width:160px;
+    }
+    .project3Info{
+        top: 29px;
+        left: 33px;
+    }
+    .activeProject4{
+        bottom: 58px;
+        right: 30px;
+    }
+
+    /* tarifs */
+
+    .pricing{
+        padding: 5%;
+    }
+    .tarif{
+        margin-right: 30px;
+    }
+    .tarif:last-child{
+        margin-right:0;
+    }
+    .contacts{
+        padding: 0 40px 30px 80px;
+    }
+    
+}
+@media(max-width :575px){
+    .titleImg{
+        width: 550px;
+        height: 550px;
+        margin-left: -55px;
+    }
+    .service{
+        margin: 20px auto;
+    }
+    .hireImg{
+        margin: 10px auto;
+    }
+    .hireText{
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    .activeProject1,
+    .activeProject2,
+    .activeProject3,
+    .activeProject4{
+        position: static;
+        margin-top: 50px;
+    }
+    .img{
+        width: 90px;
+        height: 90px;
+    }
+    .ellipseImg {
+        height: 190px;
+        width: 190px;
+    }
+    .project3Info {
+        top: 19px;
+        left: 195px;
+    }
+    .tarifs{
+        flex-direction: column;
+    }
+    .tarif:last-child,.tarif{
+        width: 80%;
+        margin: 30px auto 0;
+        padding: 29px 0 21px;
+    }
+    .contacts{
+        padding: 0 30px 80px;
+    }
+    .contactName,
+    #contactEmail,
+    #message{
+        width: 100%;
+    }
+    .socialMedia span{
+        width: 49%;
+        display: inline-block;
+    }
+    
+}

@@ -1,0 +1,325 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>IT station</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@700&display=swap" rel="stylesheet" >
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- main -->
+    <section id="title"> 
+      <div class="container-fluid">
+    
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="" class="navbar-brand">
+            <svg width="228" height="70" viewBox="0 0 228 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Logo">
+              <g id="code">
+              <path id="Vector" d="M32.64 42.2561L25.5055 35.1216L32.64 27.987L30.4686 25.8157L21.1627 35.1216L30.4686 44.4274L32.64 42.2561ZM40.7051 42.2561L47.8396 35.1216L40.7051 27.987L42.8764 25.8157L52.1823 35.1216L42.8764 44.4274L40.7051 42.2561Z" fill="#FFEB3B"/>
+              </g>
+              <g id="Frame">
+              <path id="Line 1" d="M33.5706 7.84128C55.3927 12.3026 62.3726 19.6976 63.1897 43.7257" stroke="#FDD835" stroke-width="1.55098"/>
+              <path id="Line 2" d="M8.94452 27.3666C10.2754 49.6003 16.6091 57.5557 40.2802 61.7622" stroke="#FDD835" stroke-width="1.55098"/>
+              </g>
+              <g id="ITstation">
+              <path d="M91.2949 48H86.8652V22.4062H91.2949V48ZM114.727 25.9922H106.746V48H102.334V25.9922H94.4238V22.4062H114.727V25.9922Z" fill="black"/>
+              <path d="M127.752 42.7441C127.752 42.123 127.441 41.6367 126.82 41.2852C126.211 40.9219 125.227 40.5996 123.867 40.3184C119.344 39.3691 117.082 37.4473 117.082 34.5527C117.082 32.8652 117.779 31.459 119.174 30.334C120.58 29.1973 122.414 28.6289 124.676 28.6289C127.09 28.6289 129.018 29.1973 130.459 30.334C131.912 31.4707 132.639 32.9473 132.639 34.7637H127.559C127.559 34.0371 127.324 33.4395 126.855 32.9707C126.387 32.4902 125.654 32.25 124.658 32.25C123.803 32.25 123.141 32.4434 122.672 32.8301C122.203 33.2168 121.969 33.709 121.969 34.3066C121.969 34.8691 122.232 35.3262 122.76 35.6777C123.299 36.0176 124.201 36.3164 125.467 36.5742C126.732 36.8203 127.799 37.1016 128.666 37.418C131.35 38.4023 132.691 40.1074 132.691 42.5332C132.691 44.2676 131.947 45.6738 130.459 46.752C128.971 47.8184 127.049 48.3516 124.693 48.3516C123.1 48.3516 121.682 48.0703 120.439 47.5078C119.209 46.9336 118.242 46.1543 117.539 45.1699C116.836 44.1738 116.484 43.1016 116.484 41.9531H121.301C121.348 42.8555 121.682 43.5469 122.303 44.0273C122.924 44.5078 123.756 44.748 124.799 44.748C125.771 44.748 126.504 44.5664 126.996 44.2031C127.5 43.8281 127.752 43.3418 127.752 42.7441ZM142.061 24.3047V28.9805H145.312V32.707H142.061V42.1992C142.061 42.9023 142.195 43.4062 142.465 43.7109C142.734 44.0156 143.25 44.168 144.012 44.168C144.574 44.168 145.072 44.127 145.506 44.0449V47.8945C144.51 48.1992 143.484 48.3516 142.43 48.3516C138.867 48.3516 137.051 46.5527 136.98 42.9551V32.707H134.203V28.9805H136.98V24.3047H142.061ZM159.164 48C158.93 47.543 158.76 46.9746 158.654 46.2949C157.424 47.666 155.824 48.3516 153.855 48.3516C151.992 48.3516 150.445 47.8125 149.215 46.7344C147.996 45.6562 147.387 44.2969 147.387 42.6562C147.387 40.6406 148.131 39.0938 149.619 38.0156C151.119 36.9375 153.281 36.3926 156.105 36.3809H158.443V35.291C158.443 34.4121 158.215 33.709 157.758 33.1816C157.312 32.6543 156.604 32.3906 155.631 32.3906C154.775 32.3906 154.102 32.5957 153.609 33.0059C153.129 33.416 152.889 33.9785 152.889 34.6934H147.809C147.809 33.5918 148.148 32.5723 148.828 31.6348C149.508 30.6973 150.469 29.9648 151.711 29.4375C152.953 28.8984 154.348 28.6289 155.895 28.6289C158.238 28.6289 160.096 29.2207 161.467 30.4043C162.85 31.5762 163.541 33.2285 163.541 35.3613V43.6055C163.553 45.4102 163.805 46.7754 164.297 47.7012V48H159.164ZM154.963 44.4668C155.713 44.4668 156.404 44.3027 157.037 43.9746C157.67 43.6348 158.139 43.1836 158.443 42.6211V39.3516H156.545C154.002 39.3516 152.648 40.2305 152.484 41.9883L152.467 42.2871C152.467 42.9199 152.689 43.4414 153.135 43.8516C153.58 44.2617 154.189 44.4668 154.963 44.4668ZM173.525 24.3047V28.9805H176.777V32.707H173.525V42.1992C173.525 42.9023 173.66 43.4062 173.93 43.7109C174.199 44.0156 174.715 44.168 175.477 44.168C176.039 44.168 176.537 44.127 176.971 44.0449V47.8945C175.975 48.1992 174.949 48.3516 173.895 48.3516C170.332 48.3516 168.516 46.5527 168.445 42.9551V32.707H165.668V28.9805H168.445V24.3047H173.525ZM184.969 48H179.871V28.9805H184.969V48ZM179.572 24.0586C179.572 23.2969 179.824 22.6699 180.328 22.1777C180.844 21.6855 181.541 21.4395 182.42 21.4395C183.287 21.4395 183.979 21.6855 184.494 22.1777C185.01 22.6699 185.268 23.2969 185.268 24.0586C185.268 24.832 185.004 25.4648 184.477 25.957C183.961 26.4492 183.275 26.6953 182.42 26.6953C181.564 26.6953 180.873 26.4492 180.346 25.957C179.83 25.4648 179.572 24.832 179.572 24.0586ZM188.379 38.3145C188.379 36.4277 188.742 34.7461 189.469 33.2695C190.195 31.793 191.238 30.6504 192.598 29.8418C193.969 29.0332 195.557 28.6289 197.361 28.6289C199.928 28.6289 202.02 29.4141 203.637 30.9844C205.266 32.5547 206.174 34.6875 206.361 37.3828L206.396 38.6836C206.396 41.6016 205.582 43.9453 203.953 45.7148C202.324 47.4727 200.139 48.3516 197.396 48.3516C194.654 48.3516 192.463 47.4727 190.822 45.7148C189.193 43.957 188.379 41.5664 188.379 38.543V38.3145ZM193.459 38.6836C193.459 40.4883 193.799 41.8711 194.479 42.832C195.158 43.7812 196.131 44.2559 197.396 44.2559C198.627 44.2559 199.588 43.7871 200.279 42.8496C200.971 41.9004 201.316 40.3887 201.316 38.3145C201.316 36.5449 200.971 35.1738 200.279 34.2012C199.588 33.2285 198.615 32.7422 197.361 32.7422C196.119 32.7422 195.158 33.2285 194.479 34.2012C193.799 35.1621 193.459 36.6562 193.459 38.6836ZM214.201 28.9805L214.359 31.1777C215.719 29.4785 217.541 28.6289 219.826 28.6289C221.842 28.6289 223.342 29.2207 224.326 30.4043C225.311 31.5879 225.814 33.3574 225.838 35.7129V48H220.758V35.8359C220.758 34.7578 220.523 33.9785 220.055 33.498C219.586 33.0059 218.807 32.7598 217.717 32.7598C216.287 32.7598 215.215 33.3691 214.5 34.5879V48H209.42V28.9805H214.201Z" fill="#FDD835"/>
+              </g>
+              </g>
+            </svg>
+          </a>
+          
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href=""data-scroll="#title" class="nav-link">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#" data-scroll="#services" class="nav-link">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#"data-scroll="#about" class="nav-link">About</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#"data-scroll="#projects" class="nav-link">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#"data-scroll="#contact" class="nav-link">Contact Us</a>
+              </li>
+    
+            </ul>
+          </div>
+        </nav>
+    
+    
+        <!-- Title -->
+        <div class="row titleInfo">
+          <div class="col-lg-6 mainDescription" style="margin-top: 110px;">
+            <h1 class=" style">We  Are Creative </h1><br><h1 class ="colourfulText">Information Technology</h1><h1>Agency</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <button type="button" class="btn btn-warning hireButton">Hire us</button> 
+          </div>
+
+          <div class="col-lg-6">
+              <img class ='titleImg' src="{% static 'images/main.png' %}" alt="iphone-mockup" style="margin-top: -35px; ">
+          </div>
+        </div>
+        
+      </div>
+    </section> 
+
+    <!-- services -->
+    <section id="services" class="services container-fluid">
+        <div class="serviceHeader">
+              Additional Services
+          </div>
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+              <div class="service">
+                <img class="serviceImg" src="{% static 'images/services/color_lens.png' %}" alt="">
+                <div class="title">Graphic Design</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <div>
+                    <a href="#" class="contactLink">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="service">
+                <img class="serviceImg" src="{% static 'images/services/laptop.png' %}" alt="">
+                <div class="title">Web Development</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <div >
+                    <a href="#" class="contactLink">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="service ">
+                <img class="serviceImg" src="{% static 'images/services/phone.png' %}" alt="">
+                <div class="title">Mobile Development</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <div class="cardLink">
+                    <a href="#" class="contactLink">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="service">
+                <img class="serviceImg" src="{% static 'images/services/chart.png' %}" alt="">
+                <div class="title">SEO Marketing</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <div >
+                    <a href="#" class="contactLink">Contact</a>
+                </div>
+              </div>
+            </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Why to hire us? -->
+    <section id="about" class="hireUs container-fluid">
+      <div class="row">
+        <div class="hireImg col-md-4">
+          <img class="hireImg" src="{% static 'images/hireUs.png' %}" alt="">
+        </div>
+        <div class="hireText col-md-8">
+          <span><img class="hireEclipse" src="{% static 'images/Eclipses.png' %}" alt=""></span>
+          <h2>Why You Hire us ?</h2>
+          <p> Lorem Ipsum is simply dummy text of the printing and
+             typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <p> Lorem Ipsum is simply dummy text of the printing and
+             typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+             <button type="button" class="btn btn-warning hireButton">Hire us</button> 
+        </div>
+        
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="projects" class="proof container-fluid">
+      <div class="row">
+        <div class="col-md-6 proofText">
+          <h2>Over 100+ Completed Work and Still Counting</h2>
+          <p> Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         <p> Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="col-md-6 activeProjects">
+          <div class="activeProject1">
+            <img class="img" src="{% static 'images/proof/work.png' %}" alt="work">
+              <p class="num">222</p>
+              <p class="workDone"> Work Done</p>
+          </div>
+        
+          <div class="activeProject2">
+            <img class="img" src="{% static 'images/proof/timeline.png' %}" alt="work">
+              <p class="num">3+</p>
+              <p class="workDone"> Experience</p>
+          </div>
+          
+          <div class="activeProject3">
+            <div class="projectEllipse">
+              <img class="ellipseImg" src="{% static 'images/proof/Ellipse.png' %}" alt="projectEllipse">
+              <div class="project3Info">
+                <img class="img" src="{% static 'images/proof/mood.png' %}" alt="work">
+                <p class="num">3+</p>
+                <p class="workDone"> Experience</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="activeProject4">
+            <img class="img" src="{% static 'images/proof/next_week.png' %}" alt="work">
+              <p class="num">3+</p>
+              <p class="workDone"> Experience</p>
+          </div>
+
+        </div>  
+      </div>
+    </section>
+
+    <!-- pricing -->
+    <section class="pricing">
+      <div class="pricingHeader">
+        Affordable Price
+      </div>
+      <div class="tarifs">
+        <div class="tarif">
+          <img class="pricingImg" src="{% static 'images/services/laptop.png' %}" alt="">
+          <div class="title">Graphic Design</div>
+          <ul class="tarifFeatures">
+            <li class="tarifFeature">Web Development</li>
+            <li class="tarifFeature">Mobile Development</li>
+            <li class="tarifFeature">UI/UX Design</li>
+            <li class="tarifFeature">SEO Marketing</li>
+            <li class="tarifFeature">Digital Marketing</li>
+          </ul>
+          <div class="cost">
+            $400/Month  
+          </div>
+          <button type="button" class="btn btn-warning tarifButton">Hire us</button> 
+        </div>
+         
+        <div class="tarif">
+          <img class="pricingImg" src="{% static 'images/services/laptop.png' %}" alt="">
+          <div class="title">Graphic Design</div>
+          <ul class="tarifFeatures">
+            <li class="tarifFeature">Web Development</li>
+            <li class="tarifFeature">Mobile Development</li>
+            <li class="tarifFeature">UI/UX Design</li>
+            <li class="tarifFeature">SEO Marketing</li>
+            <li class="tarifFeature">Digital Marketing</li>
+          </ul>
+          <div class="cost">
+            $400/Month  
+          </div>
+          <button type="button" class="btn btn-warning tarifButton">Hire us</button> 
+        </div>
+
+        <div class="tarif">
+          <img class="pricingImg" src="{% static 'images/services/laptop.png' %}" alt="">
+          <div class="title">Graphic Design</div>
+          <ul class="tarifFeatures">
+            <li class="tarifFeature">Web Development</li>
+            <li class="tarifFeature">Mobile Development</li>
+            <li class="tarifFeature">UI/UX Design</li>
+            <li class="tarifFeature">SEO Marketing</li>
+            <li class="tarifFeature">Digital Marketing</li>
+          </ul>
+          <div class="cost">
+            $400/Month  
+          </div>
+          <button type="button" class="btn btn-warning tarifButton">Hire us</button> 
+        </div>
+      </div>
+    </section>
+
+    <!-- contacts -->
+    <section id="contact" class="row">
+        <div class="col-lg-6">
+          <img  src="{% static 'images/Group 3.png' %}" class="contactImg">
+        </div>
+        <div class="col-lg-6 contacts">
+          <form method="post" action="{% url 'message' %}">
+            {% csrf_token %}
+            <input type="text" class="contactName" name="name" placeholder="First Name">
+            <input type="text" class="contactName" name="last_name" placeholder="Last Name">
+            <input type="email" name="email" id="contactEmail" placeholder="Email Address" >
+            <textarea name="msg" id="message" placeholder="Message..."></textarea>
+            <button type="submit" class="btn btn-warning submitButton">Submit</button>
+        </form>
+        </div>
+    </section>
+
+    <!-- footer --> 
+    <footer>
+      <div class="row">
+      <div class="col-md-6 row">
+        <img class="logo footerLogo" src="{% static 'images/Logo.png' %}" alt="logo">
+        <p>Lorem Ipsum is simply dummy text of the printing 
+          and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <div class="socialMedia">
+            <span>
+              <i class="fab fa-facebook-f"></i>
+             <a class="socialLink" href="">Facebook</a> 
+            </span>
+            <span>
+              <i class="fab fa-instagram"></i>
+             <a class="socialLink" href="">Instagram</a> 
+            </span>
+            <span>
+              <i class="fab fa-pinterest"></i>
+             <a class="socialLink" href="">Pinterest</a>
+            </span>
+            <span>
+              <i class="fab fa-telegram"></i>
+             <a class="socialLink" href="">Telegram</a> 
+            </span>
+          </div>
+      </div>
+
+      <div class="col-md-6 map">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="600" height="567" id="gmap_canvas" src="https://maps.google.com/maps?q=andijan%20digital%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2torrentz.net"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="{% static 'index.js' %}"></script>
+</body>
+</html>
